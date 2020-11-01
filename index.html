@@ -1,0 +1,513 @@
+{% extends 'default_frame.twig' %}
+
+{% block main %}
+
+<style>
+  @media only screen and (min-width: 759px){
+.link{padding-top: 80px;
+    margin-top:-80px;}
+
+.header_in .logo{width:215px;}
+.header_in ul{left:250px;}
+.catch{background:url(/html/user_data/assets/img/omoi.jpg);
+background-size: cover;
+}
+.catch_area {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+height: 500px;
+    
+}
+.catch_area .txt_area a.btn {
+    background: #454545;
+    width: 300px;
+    padding: 15px 0;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    font-size: 16px;
+}
+.catch_area .txt_area a.btn{background:#454545;width:300px;padding:15px 0;color:#fff;display: inline-block;text-decoration:none;margin: 30px auto;
+display: block;font-size:16px;}
+.catch_area .txt_area a.btn:hover{color:#454545 !important;}
+.catch_area .txt_area a.btn::before {background: #fff !important;}
+
+
+h2.ttl{color:#baa97d;font-size:24px;line-height:1.5em;}
+
+    .catch_area .txt_area {
+    background: rgba(255,255,255,0.8);
+    width: 600px;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: 145px;
+    right: 50px;
+    z-index: 100;
+    margin-top:40px;
+}
+    .catch_area .text_area_left {
+        font-size:30px;
+        text-align:center;
+    position: absolute;
+    left:50px;
+    top:215px;
+    text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff,0 0 3px #fff
+    }
+    .catch_area .text_area_left span{font-size:18px;}
+
+.catch_area .txt_area h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    background:none;
+    border:none;
+    color:#454545;
+    padding:8px;
+}
+.catch_area .txt_area h1 span{
+    font-size:30px;
+    display:block;
+}
+h1::before, h1::after {display:none;}
+
+.sweets_main01{
+	background: rgba(0, 0, 0, 0) url("/html/user_data/assets/img/omoi.jpg") repeat scroll 50% 50% / cover;
+	height: 450px;
+	margin: 0px;
+	position:relative;
+}
+.sweets_main01_textbox{
+    background: rgba(255,255,255,0.8);
+width: 800px;
+padding: 50px 20px;
+position: absolute;
+bottom: 40px;
+left: 20%;
+z-index: 100;
+    
+}
+.sweets_main01_textbox h2{margin-top:0;}
+
+.sweets_main01_textbox p{font-size:18px;font-family: 'Noto Serif JP', serif;line-height: 1.8em;}
+
+.sweets_main02{
+    background:#faf9f7;
+    padding:50px 10%;
+    
+}
+.sweets_main02 h2{
+    margin-top:20px;
+    text-align:left!important;
+    
+}
+
+.cont{width:900px;margin:20px auto;}
+.cont div{text-align:center;}
+.cont div img{margin:0 auto 20px auto;}
+.cont div p{margin:10px auto;}
+.cont div h4{}
+.cont .lead{text-align:center;font-family: 'Noto Serif JP', serif;}
+.sweets_main02 h4{font-size:16px;font-family: 'Noto Serif JP', serif;}
+.sweets_main02 p{font-family: 'Noto Serif JP', serif;}
+   
+  .slider {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .slick-slide img {
+    width: 100%;
+    height: auto;
+  }
+  .mypattern {
+    width: 100%;
+  }
+  .mypattern  .slick-slide{
+    margin: 30px;
+  }
+
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev {
+    background: url(/html/user_data/assets/img/slick-prev.png)no-repeat center !important;
+    width: 62px !important;
+    height: 123px !important;
+    left: -90px !important;
+}
+
+.slick-next {
+    background: url(/html/user_data/assets/img/slick-next.png)no-repeat center !important;
+    width: 62px !important;
+    height: 123px !important;
+    right: -90px !important;
+}
+.autoplay2 {margin-bottom:80px;}
+.autoplay2 div div.obox{border:1px solid #dadada;background:#faf9f7;padding:10px;text-align:left;}
+.autoplay2 div div h4{color:#566b8b;font-weight:bold;border-bottom:2px #ccbf9f solid;padding:2px;text-align:left;}
+
+.autoplay2.mypattern  .slick-slide{
+    margin: 20px;
+  }
+
+.sweets_main03 {
+   padding: 50px 10%;
+    
+}
+.sweets_main03 h2{
+    margin: 0px 0px !important;
+    right: 150px;
+    padding: 0px!important;
+}
+
+.sweets_main03 .cont-pc {
+    width: 900px;
+    margin: 20px 0px;
+    
+}
+
+
+
+
+.sweets_main04{width:1200px;background:#f9f9f9;margin:0 auto;padding:50px;}
+.sweets_main04 h4{text-align:center;margin:20px; color:#baa97d;font-family: 'Noto Serif JP', serif;font-size:24px;line-height:1.5em;}
+.sweets_main04 .fee{width:630px;margin:10px auto;font-family: 'Noto Serif JP', serif;color:#566b8b;}
+.sweets_main04 .fee strong{font-size:60px;float:left;}
+.sweets_main04 .fee span{font-size:30px;float:right;}
+  }
+
+  @media only screen and (max-width: 896px) {
+    .sweets_main03 .cont-pc { display: none !important; }
+    .sweets_main03 .cont-sp { display: block !important; }
+}
+
+@media only screen and (min-width: 897px) {
+    .sweets_main03 .cont-pc { display: flex !important; }
+    .sweets_main03 .cont-sp { display: none !important; }
+}
+
+
+
+  @media only screen and (max-width: 758px){
+.header{top:0;}
+.header_in .logo{top:6px;}
+.header_in{position: static;height: 53px;}
+
+.catch_area{height:auto;padding-bottom:5px;}
+.catch_area .txt_area{padding: 5px 20px;}
+.catch_area .text_area_left{font-size:20px;}
+.catch_area .text_area_left span{font-size:14px;line-height: 1.5em !important;display: block;margin-top: 10px;}
+.catch_area .txt_area h1{font-size:16px;margin-bottom:20px;}
+.catch_area .txt_area h1 span{margin-bottom:10px;}
+.catch_area .txt_area a.btn{margin-top:20px;}
+h2.ttl{font-size:16px; color:#baa97d;}
+
+
+.catch_area .text_area_left,
+.catch_area .txt_area{width:90%;margin:10px auto;position:static !important;}
+.catch_area{width:90%;margin:10px auto;position:static !important;}
+.sweets_main01_textbox{width:80%;margin:50px auto;}
+.sweets_main01{padding:30px;}
+
+.cont{width:auto;}
+.cont div p{width:auto;}
+.sweets_main04{width:auto;}
+.sweets_main04 .fee{width:325px;}
+.sweets_main04 .fee strong,
+.sweets_main04 .fee span{}
+
+.sweets_main04 .fee strong{font-size:32px;}
+
+.sweets_main01_textbox {
+    width: 90%;
+    margin: 0 auto;
+    position: static;
+}
+.slick-prev, .slick-next{display:none !important;}
+.mypattern .slick-slide{padding:5px;margin:5px;}
+h2.ttl{font-size:18px;}
+img.number{width: 40px; height: 40px;}
+
+.sweets_main02{padding:15px 0 5px 0;}
+.sweets_main02 h4{font-size:11px;}
+.sweets_main02 div p{font-size:10px;}
+.sweets_main02 .pc{
+    display: none!important;
+}
+.cont .lead{font-size:14px;}
+.autoplay2.mypattern .slick-slide{margin:5px;}
+
+    .sweets_main01{height:auto;}
+.autoplay2 {margin-bottom: 40px;}
+.autoplay2 div div.obox p{font-size:11px;}
+.autoplay2 div div h4{font-size:13px;}
+.sweets_main04 h4{font-size:16px;}
+.sweets_main04{padding:5px;}
+.sweets_main04 .fee strong{font-size:30px;}
+.sweets_main04 .fee span{font-size:18px;}
+.sweets_main01_textbox p{font-size:13px;}
+.b_area{padding:20px;}
+.catch_area .txt_area h1 span{font-size:24px;}
+
+  }
+
+</style>
+
+
+</div>
+
+<h1 style="margin-top:80px;" class="pc">参加スイーツ屋さん募集中</h1>
+<h1 style="margin-top:60px;" class="sp">参加スイーツ屋さん募集中</h1>
+
+<div id="container">
+    
+<div style="padding-top:10px;" class="pc">
+<div class="link" id="shikumi">
+<div class="cont">
+        <p class="lead">日本各地のスイーツ屋のみなさまへ<br>
+御社のおいしいスイーツを、全国の方にお届けしませんか？<br>
+わたしたちが、御社のファンを日本中に広げる支援をします。
+</p>
+</div>
+</div>
+<div class="clearfix" style="text-align:center;padding-bottom:50px;">
+<img src="/html/user_data/assets/img/image0.jpg" alt="LikeSweetsBOX スイーツ巡り便"/>
+
+</div>
+</div>
+
+<div style="padding-top:30px;" class="sp">
+<div class="link" id="shikumi">
+<div class="cont">
+        <p class="lead" style="text-align:left;">日本各地のスイーツ屋のみなさまへ<br>
+御社のおいしいスイーツを、日本中の方にお届けしませんか？<br>
+わたしたちが、本サービスを通じて、御社のファンを日本中に広げる支援をします。
+</p>
+<img src="/html/user_data/assets/img/image0.jpg" alt="LikeSweetsBOX スイーツ巡り便"/>
+</div>
+</div>
+</div>
+<br>
+<a href="https://forms.gle/jSjVnzm8GhjFmUSZA" target="_blank" class="btn">募集フォームはコチラ</a>
+<br>
+
+</div>
+<br>
+<br>
+
+
+
+
+<div class="sweets_main02">
+<div class="pc" style="display: flex; margin:0 auto;">    
+    <h2>ご参加いただく<br>メリット</h2>
+   <div class="cont_all">  
+        <div class="cont">
+           
+            <h2 class="ttl" style="margin:0px 0px -20px 15px; text-align:left;">
+                <img src="/html/user_data/assets/img/common/partner_icon_01.png" alt="①" width="40 height="40"　style="margin-right:20px;"> 新たな手間を増やさず、ネット販売を実現するサービスです。</h2>
+            <p class="lead" style="margin-bottom:10px; text-align:left;">ネット販売のためのパソコン業務などは弊社にて代行支援しますので、今まで通りスイーツ製造に集中して、自慢のスイーツを全国にネット販売を実現できるサービスです。</p>
+        </div>
+        <div class="cont">
+            <h2 class="ttl" style="margin:0px 0px -20px 15px; text-align:left;">
+            <img src="/html/user_data/assets/img/common/partner_icon_02.png" alt="②" width="40 height="40" style="margin-right:20px;">新リスクなく新たな月々の安定収入を得れます</h2>
+            <p class="lead" style="margin-bottom:10px; text-align:left;">初期費用、出展費用などは全て無料です。毎月配送した分より、手数料を頂くビジネスモデルです。</p>
+        </div>
+        <div class="cont">
+            <h2 class="ttl" style="margin:0px 0px -20px 15px; text-align:left;">
+                 <img src="/html/user_data/assets/img/common/partner_icon_03.png" alt="③" width="40 height="40" style="margin-right:20px;" >新お店やシェフの認知拡大、ファン獲得になります</h2>
+            <p class="lead" style="margin-bottom:10px; text-align:left;">SNSでの話題作りにも弊社は自信がありますし、必要であれば支援も行っています。お店やシェフの認知拡大や、新たなファンの獲得にもなります。</p>
+        </div>
+        <div class="cont">
+            <h2 class="ttl" style="margin:0px 0px -20px 15px; text-align:left;">
+            <img src="/html/user_data/assets/img/common/partner_icon_04.png" alt="④" width="40 height="40" style="margin-right:20px;">スイーツの感想もフィードバックします。</h2>
+            <p class="lead" style="margin-bottom:10px; text-align:left;">北海道と九州のお客様では味覚が違ったりするなどの情報が得られたり、自慢の新作スイーツの感想を全国の方より得られる機会も作っていきます。</p>
+        </div>
+     </div>
+</div>
+
+<div class="sp">    
+    <h2>ご参加いただく<br>メリット</h2>
+    <div class="cont">
+        <h2 class="ttl" style=" text-align:left; display: flex;">
+         <img src="/html/user_data/assets/img/common/partner_icon_01.png" alt="①" width="40"height="40"style="margin-right:20px;" > 新たな手間を増やさず、ネット販売を実現するサービスです。</h2>
+        <p class="lead" style="margin-bottom:10px; text-align:left;">ネット販売のためのパソコン業務などは弊社にて代行支援しますので、今まで通りスイーツ製造に集中して、自慢のスイーツを全国にネット販売を実現できるサービスです。</p>
+    </div>
+    <div class="cont">
+        <h2 class="ttl" style=" text-align:left;display: flex;">
+            <img src="/html/user_data/assets/img/common/partner_icon_02.png" alt="②" width="40"height="40" style="margin-right:20px;" > リスクなく新たな月々の安定収入を得れます</h2>
+        <p class="lead" style="margin-bottom:10px; text-align:left;">初期費用、出展費用などは全て無料です。毎月配送した分より、手数料を頂くビジネスモデルです。</p>
+    </div>
+    <div class="cont">
+        <h2 class="ttl" style=" text-align:left;display: flex;">
+        <img src="/html/user_data/assets/img/common/partner_icon_03.png" alt="③" width="40"height="40" style="margin-right:20px;" > お店やシェフの認知拡大、ファン獲得になります</h2>
+        <p class="lead" style="margin-bottom:10px; text-align:left;">SNSでの話題作りにも弊社は自信がありますし、必要であれば支援も行っています。お店やシェフの認知拡大や、新たなファンの獲得にもなります。</p>
+    </div>
+    <div class="cont">
+        <h2 class="ttl" style=" text-align:left;display: flex;">
+            <img src="/html/user_data/assets/img/common/partner_icon_04.png" alt="④" width="40" height="40" style="margin-right:20px;" > スイーツの感想もフィードバックします。</h2>
+        <p class="lead" style="margin-bottom:10px; text-align:left;">北海道と九州のお客様では味覚が違ったりするなどの情報が得られたり、自慢の新作スイーツの感想を全国の方より得られる機会も作っていきます。</p>
+    </div>
+</div>
+
+</div>
+
+
+
+{# <div class="link" id="omoi">#}
+{#<div class="sweets_main01">#}
+{#<div class="sweets_main01_textbox">#}
+{#    <h2>サービス誕生の背景と想い</h2>#}
+{#    <p class="lead">全国には、地元密着で美味しいスイーツを提供するお店がたくさんあります。<br>#}
+{#    そんな地元で愛される美味しいスイーツを、全国の方にお届けしたいという想いで本サービスが生まれました。<br>#}
+{#    本サービスを通じて、より多くの日本中の人と、全国のスイーツ屋さんの新たな出会いが生まれる事を祈っています。</p>#}
+{#</div>#}
+{#</div>#}
+{#</div>#}
+
+<div class="sweets_main03">
+    <div class="cont-pc">
+     <h2>参加の流れ</h2>
+      <img src="/html/user_data/assets/img/common/partner_icon_process.png" alt="" width="70" height="630"style="margin:0px 10px 0px 90px;" >
+      <div class="how_to_participate" width="645" style="margin-left:10px;">
+             <p class="lead" style="font-size: 24px; font-weight: 700; margin-bottom:10px; text-align:left;">①ご連絡フォームへ記入</p>
+            <p style="margin-bottom:60px; text-align:left;font-size=14px"><a href="https://dev2.likesweetsbox.com/" target="_blank" rel="フォーム">フォーム</a>に必要事項を記入の上、送信ください。<br>
+            記載内容を確認し担当より連絡させていただきます。</p>
+            
+            <p class="lead" style="font-size: 24px; font-weight: 700;margin-bottom:10px; text-align:left;">②スイーツセットを弊社に送付</p>
+            <p class="lead" style="font-size: 24px; font-weight: 700;margin-bottom:10px; text-align:left;">③美味しさ・配送状況・品質等の検査 </p>
+            <p class="lead" style="font-size: 24px; font-weight: 700;margin-bottom:10px; text-align:left;">④提供スイーツ決定、取材依頼 </p>
+            <p class="lead" style="font-size: 24px; font-weight: 700;margin-bottom:50px; text-align:left;">⑤梱包キットの提供</p>
+            <p class="lead" style="font-size: 24px; font-weight: 700;margin-bottom:10px; text-align:left;">⑥スイーツセットの製造</p>
+            <p class="lead" style="font-size: 24px; font-weight: 700;margin-bottom:10px; text-align:left;">⑦梱包 </p>
+            <p class="lead" style="font-size: 24px; font-weight: 700;margin-bottom:10px; text-align:left;">⑧集荷対応 </p>
+            <p class="lead" style="font-size: 24px; font-weight: 700;margin-bottom:10px; text-align:left;">⑨お客様の感想の確認</p>
+      </div>
+    </div>
+    
+        <div class="cont-sp" >
+            <h2>参加の流れ</h2>
+            <div class="cont-sp2"style="display: flex;">
+            <img src="/html/user_data/assets/img/common/partner_icon_process.png" alt="" width="60" height="550"style="margin:0px 10px 0px 30px" >
+            <div class="how_to_participate" width="645">
+                <p class="lead" style="font-size: 16px; font-weight: 700; margin:10px; text-align:left;">①ご連絡フォームへ記入</p>
+                <p style="text-align:left;"><a href="https://dev2.likesweetsbox.com/" target="_blank" rel="フォーム" >フォーム</a>に必要事項を記入の上、送信ください。<br>
+                記載内容を確認し担当より連絡させていただきます。</p>
+            
+                <p class="lead" style="font-size: 16px; font-weight: 700;margin:40px 10px 10px 10px; text-align:left;">②スイーツセットを弊社に送付</p>
+                <p class="lead" style="font-size: 16px; font-weight: 700;margin:10px; text-align:left;">③美味しさ・配送状況・品質等の検査 </p>
+                <p class="lead" style="font-size: 16px; font-weight: 700;margin:10px; text-align:left;">④提供スイーツ決定、取材依頼 </p>
+                <p class="lead" style="font-size: 16px; font-weight: 700;margin:10px; text-align:left;">⑤梱包キットの提供</p>
+                <p class="lead" style="font-size: 16px; font-weight: 700;margin:40px 10px 10px 10px; text-align:left;">⑥スイーツセットの製造</p>
+                <p class="lead" style="font-size: 16px; font-weight: 700;margin:10px; text-align:left;">⑦梱包 </p>
+                <p class="lead" style="font-size: 16px; font-weight: 700;margin:10px; text-align:left;">⑧集荷対応 </p>
+                <p class="lead" style="font-size: 16px; font-weight: 700;margin:10px; text-align:left;">⑨お客様の感想の確認</p>
+            </div>
+            </div>
+        </div>
+
+</div>
+
+<div class="sweets_main04">
+    <div class="cont">
+        <br>
+    <p class="lead">費用・条件などの詳細に関するご質問なども<br>下記の募集フォームよりお問い合わせください。</p>
+    <a href="https://forms.gle/jSjVnzm8GhjFmUSZA" target="_blank" class="btn">募集フォームはコチラ</a>
+    </div>
+</div>
+<div class="link" id="boshu">
+
+
+
+</div>
+</div>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    </div>
+
+  <script type="text/javascript">
+
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+
+$('.autoplay2').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+    centerMode: true,
+    centerPadding: '10%'});
+        
+$('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+    centerMode: true,
+    centerPadding: '10%'
+    
+});    
+    
+    
+    
+}
+
+if(navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+
+$('.autoplay2').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+    centerMode: true,
+    centerPadding: '5%'});
+        
+$('.autoplay').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+    centerMode: true,
+    centerPadding: '5%'
+    
+});    
+
+
+jQuery(function($){
+    $('.gnav__menu__item a').on('click',function(){
+        $('.menu__line').toggleClass('active');
+        $('.gnav').fadeToggle();
+    });
+});
+
+    
+}
+
+
+
+
+</script>
+
+
+
+
+{% endblock %}
